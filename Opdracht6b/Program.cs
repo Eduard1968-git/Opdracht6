@@ -6,17 +6,17 @@ namespace Opdracht6b
     {
         static void Main(string[] args)
         {
-            const int MAX_TAKENS = 100;
+            const int MAX_TAKEN = 100;
 
             bool isVoltooien = false;
             bool isVerwijderen = false;
 
-            string[] actieveTaken = new string[MAX_TAKENS];
-            DateTime[] deadlines = new DateTime[MAX_TAKENS];
-            bool[] heeftDeadline = new bool[MAX_TAKENS];
+            string[] actieveTaken = new string[MAX_TAKEN];
+            DateTime[] deadlines = new DateTime[MAX_TAKEN];
+            bool[] heeftDeadline = new bool[MAX_TAKEN];
             int aantalActieveTaken = 0;
 
-            string[] voltooideTaken = new string[MAX_TAKENS];
+            string[] voltooideTaken = new string[MAX_TAKEN];
             int aantalVoltooideTaken = 0;
 
             // ===== INPUT =====
@@ -110,7 +110,7 @@ namespace Opdracht6b
                                 tekst += $" | {actieveTaken[index]}";
                             }
 
-                            if (aantalVoltooideTaken < MAX_TAKENS)
+                            if (aantalVoltooideTaken < MAX_TAKEN)
                             {
                                 voltooideTaken[aantalVoltooideTaken++] = tekst;
                             }
@@ -168,7 +168,7 @@ namespace Opdracht6b
                 // ===== TOEVOEGEN =====
                 if (keuze == "T")
                 {
-                    if (aantalActieveTaken >= MAX_TAKENS)
+                    if (aantalActieveTaken >= MAX_TAKEN)
                     {
                         Console.WriteLine("Te veel taken, kan geen nieuwe taak toevoegen.");
                         Console.ReadKey();
@@ -214,7 +214,7 @@ namespace Opdracht6b
                         }
                         else
                         {
-                            Console.WriteLine("Ongelijke invoer, voer een datum in het formaat yyyy-MM-dd in of druk Enter om over te slaan.");
+                            Console.WriteLine("Ongelijke invoer, voer een datum in het formaat yyyy-MM-dd in.");
                             Console.ReadKey();
                         }
                     }
