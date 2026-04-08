@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            const int MAX_TAKEN = 6;
+            const int MAX_TAKEN = 100;
 
             bool isVoltooien = false;
             bool isVerwijderen = false;
