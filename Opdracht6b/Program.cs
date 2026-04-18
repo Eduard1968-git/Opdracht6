@@ -123,7 +123,7 @@
                         }
                         else
                         {
-                            Console.WriteLine("Ongeldig nummer.");
+                            Console.WriteLine("Ongeldige nummer.");
                             Console.ReadKey();
                         }
                     }
