@@ -123,7 +123,7 @@
                         }
                         else
                         {
-                            Console.WriteLine("Ongeldige nummer.");
+                            Console.WriteLine("Ongeldige invoer.");
                             Console.ReadKey();
                         }
                     }
@@ -151,7 +151,7 @@
                         }
                         else
                         {
-                            Console.WriteLine("Ongeldig nummer.");
+                            Console.WriteLine("Ongeldige invoer.");
                             Console.ReadKey();
                         }
                     }
@@ -181,11 +181,11 @@
 
                         if (string.IsNullOrWhiteSpace(omschrijving))
                         {
-                            Console.WriteLine("Ongelijke invoer, de omschrijving mag niet leeg zijn.");
+                            Console.WriteLine("Ongeldige invoer, de omschrijving mag niet leeg zijn.");
                         }
                         else if (omschrijving.Length > 30)
                         {
-                            Console.WriteLine("Ongelijke invoer, de omschrijving mag maximaal 30 karakters bevatten.");
+                            Console.WriteLine("Ongeldige invoer, de omschrijving mag maximaal 30 karakters bevatten.");
                         }
                         else
                         {
@@ -246,7 +246,6 @@
                 Console.WriteLine("\nDruk op een toets om door te gaan...");
                 Console.ReadKey();
             }
-
         }
     }
 }
