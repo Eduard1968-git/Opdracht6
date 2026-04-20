@@ -68,9 +68,9 @@ namespace Opdracht6_18._04._26
                 for (int i = 0; i < actieveTaken.Count; i++)
                     if (heeftDeadline[i])
                     {
-                        int d = (deadlines[i] - DateTime.Today).Days;
+                        int dagen = (deadlines[i] - DateTime.Today).Days;
                         string line = (isVoltooien || isVerwijderen) ? $"[{i + 1}] " : "- ";
-                        Console.WriteLine($"{line}deadline: {deadlines[i]:dd/MM/yyyy} (nog: {d} dagen) | {actieveTaken[i]}");
+                        Console.WriteLine($"{line}deadline: {deadlines[i]:dd/MM/yyyy} (nog: {dagen} dagen) | {actieveTaken[i]}");
                     }
                 Console.WriteLine();
 
