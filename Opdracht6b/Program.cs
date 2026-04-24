@@ -102,7 +102,7 @@ namespace Opdracht6b
                         voltooiModus = false; normaalModus = true;
                         continue;
                     }
-                    Console.Write("\nWelke taak (voor nummer in of [A]nnuleren) ?: ");
+                    Console.Write("\nWelke taak (voer nummer in of [A]nnuleren) ?: ");
                     string invoer = Console.ReadLine()?.Trim() ?? "";
                     if (invoer.ToUpper() != "A" && int.TryParse(invoer, out int nr) && nr >= 1 && nr <= aantalActieveTaken)
                     {
@@ -143,7 +143,7 @@ namespace Opdracht6b
                         verwijderModus = false; normaalModus = true;
                         continue;
                     }
-                    Console.Write("\nWelke taak (voor nummer in of [A]nnuleren) ?: ");
+                    Console.Write("\nWelke taak (voer nummer in of [A]nnuleren) ?: ");
                     string invoer = Console.ReadLine()?.Trim() ?? "";
                     if (invoer.ToUpper() != "A" && int.TryParse(invoer, out int nr) && nr >= 1 && nr <= aantalActieveTaken)
                     {
