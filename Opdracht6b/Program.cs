@@ -244,7 +244,7 @@ namespace Opdracht6b
                     }
                     continue;
                 }
-                Console.WriteLine("\nDruk op een toets om door te gaan...");
+                Console.WriteLine("\nDruk op een toets om door te gaan....");
                 Console.ReadKey();
             }
         }
